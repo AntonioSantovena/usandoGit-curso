@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="usandogit-component">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `usandogit-component`
+     * 
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class UsandogitComponent extends Polymer.Element {
+      static get is() { return 'usandogit-component'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'usandogit-component'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(UsandogitComponent.is, UsandogitComponent);
+  </script>
+</dom-module>
